@@ -1,16 +1,21 @@
 <template>
-  <Header></Header>
+  <div class="w-screen h-screen bg-white flex flex-row flex-wrap p-3">
+    <div class="mx-auto w-2/3">
+      <Header></Header>
+      <Work></Work>
+    </div>
+  </div>
 </template>
 
 <script>
 import Header from './components/Header/Card.vue'
-
+import Work from './components/Work.vue'
 
 export default {
   name: 'App',
   components: {
-  
    Header,
+   Work,
   }
 }
 </script>
