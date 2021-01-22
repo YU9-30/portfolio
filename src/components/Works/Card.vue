@@ -33,7 +33,7 @@
             </div>
         </div>
             </div>
-        <h1 class="text-8xl m-0 p-0 font-black">WORKS<br>yu-9</h1>
+        <h1 class="text-9xl m-0 p-0 font-black">WORKS</h1>
         </div>
     <div v-if="showModal" class="opacity-25 fixed inset-0 z-40 bg-black"></div>
   </div>
