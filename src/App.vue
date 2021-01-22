@@ -9,7 +9,7 @@
 
 <script>
 import Header from './components/Header/Card.vue'
-import Work from './components/Work.vue'
+import Work from './components/Works/Work.vue'
 
 export default {
   name: 'App',
