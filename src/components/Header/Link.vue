@@ -1,5 +1,5 @@
 <template>
-    <div class="flex">
+    <div class="flex flex-wrap">
         <a class="flex-auto" v-for="link in links" :key='link.url' :href= link.url >
             <button class="m-1 font-medium py-1 px-2 bg-white rounded text-gray-700 bg-gray-100 border border-gray-300 hover:bg-blue-600 hover:text-white">
             {{ link.display_name }}
