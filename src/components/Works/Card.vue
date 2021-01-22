@@ -1,5 +1,5 @@
 <template>
-<div class="grid gap-4 grid-cols-1 md:grid-cols-3">
+<div class="grid gap-4 grid-cols-1 md:grid-cols-2">
     <div v-for="work in works" :key='work.data' class="pt-3">
         <div class="rounded shadow-lg bg-gray-100 p-4 cursor-pointer" v-on:click="toggleModal()">
             <h2 class="text-xl title-font font-bold mb-3 text-normal-color">{{work.title}}</h2>

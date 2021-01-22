@@ -1,6 +1,6 @@
 <template>
   <div class="w-screen h-screen bg-white flex flex-row flex-wrap p-3">
-    <div class="mx-auto w-2/3">
+    <div class="w-full m-2 md:mx-auto md:w-2/3">
       <Header></Header>
       <Work></Work>
     </div>
