@@ -20,8 +20,8 @@ export default {
             works : [
             {
                 title: 'Bumeshi!!',
-                data: '2020/1/22',
-                abstract: "『ネガティブなレビューがない飲食店レビューサイト』を目標に開発中",
+                date: '2020/1/22',
+                abstract: "『ネガティブなレビューがない飲食店レビューサイト』を目標に開発中です。",
                 Links: [
                   {
                     url: 'https://github.com/YU9-30/bumeshi_web',
@@ -30,21 +30,29 @@ export default {
                   {
                     url: 'https://bumeshi-eat.herokuapp.com/',
                     display_name: 'Bumeshi!!'
+                  },
+                  {
+                    url: 'https://zenn.dev/yu_9/articles/yu9-bumeshi-2021',
+                    display_name: 'Zennの記事'
                   }
                 ],
             },
             {
                 title: 'BECCHU',
-                data: '2020/1/22',
-                abstract: "『ネガティブなレビューがない飲食店レビューサイト』を目標に開発中",
+                date: '2020/1/22',
+                abstract: "『クリエイターさんのデザイン守りつつ、オンリーワンを作る』を目標に開発しました。",
                 Links: [
                   {
                     url: 'https://github.com/YU9-30/bumeshi_web',
                     display_name: 'Github',
                   },
                   {
-                    url: 'https://bumeshi-eat.herokuapp.com/',
-                    display_name: 'Bumeshi!!'
+                    url: 'http://becchu.yu-9.work/',
+                    display_name: 'BECCHU'
+                  },
+                  {
+                    url: 'https://zenn.dev/yu_9/articles/yu9-becchu-2021',
+                    display_name: 'Zennの記事'
                   }
                 ],
             },
