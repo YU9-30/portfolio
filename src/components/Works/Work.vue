@@ -20,6 +20,11 @@ export default {
         {
           title: "クリエイターサポートツール",
           date: "2019/1/22",
+          image: {
+            display: "work/CST.jpg",
+            leave: "work/CST.jpg",
+            hover: "work/CST.gif",
+          },
           abstract: "SUZURIのPR画像を生成できるWEBアプリケーション",
           categories: ["PHP", "WEBアプリケーション", "SUZURI API"],
           links: [
@@ -40,8 +45,12 @@ export default {
         {
           title: "BECCHU",
           date: "2020/11/1",
-          abstract:
-            "デザインと色を選ぶことでTシャツなどを作成できるWEBアプリケーション",
+          abstract: "デザインと色を選ぶことでTシャツなどを作成できるWEBアプリケーション",
+          image: {
+            display: "icon.jpg",
+            leave: "icon.jpg",
+            hover: "work/CST.gif",
+          },
           categories: ["PHP", "Laravel", "WEBアプリケーション", "SUZURI API"],
           links: [
             {
@@ -61,6 +70,11 @@ export default {
         {
           title: "Bumeshi!!",
           date: "2021/1/10",
+          image: {
+            display: "work/CST.gif",
+            leave: "icon.jpg",
+            hover: "work/CST.gif",
+          },
           abstract: "美味しい飲食店を共有するWEBアプリケーション",
           categories: [
             "Ruby",
