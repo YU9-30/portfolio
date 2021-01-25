@@ -13,13 +13,22 @@
                     </div>
                     <!--body-->
                     <div class="relative p-6 flex-auto">
-                        <p class="my-4 text-gray-600 text-lg leading-relaxed">
+                        <p class="my-4 text-normal-color text-lg">
                         {{work.abstract}}
                         </p>
+                        <h3 class="font-bold text-normal-color">Link</h3>
+                        <ul>
+                            <li  v-for="link in work.links" :key='link.url' >
+                                <a class="hover:text-blue-300" :href= link.url>
+                                {{ link.display_name }}
+                                </a>
+                            </li>
+                        </ul>
+                        
                     </div>
                     <!--footer-->
-                    <div class="flex items-center justify-end p-6 border-t border-solid border-gray-300 rounded-b">
-                    
+                    <div class="p-6 border-t border-solid border-gray-300 rounded-b">
+                        <p class="tag" v-for="category in work.categories"  :key="category.index">{{category}}</p>                   
                     </div>
                 </div>
             </div>
@@ -37,20 +46,20 @@
 </template>
 
 <script>
+
 export default {
     props: ['work'],
     name: "work-modal",
     data() {
         return {
-            showModal: false
+            showModal: false,
+
         }
     },
     methods: {
         closeModal:function(){
             this.$emit('close');
-            
         }
-    }
-    
+    },
 }
 </script>
