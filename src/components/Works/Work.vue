@@ -18,30 +18,38 @@ export default {
     data() {
         return {
             works : [
-            {
-                title: 'Bumeshi!!',
-                date: '2020/1/22',
-                abstract: "『ネガティブなレビューがない飲食店レビューサイト』を目標に開発中です。",
-                Links: [
+              {
+                title: 'クリエイターサポートツール',
+                md: 'bumeshi.md',
+                date: '2019/1/22',
+                abstract: "『PR画像をもっと気軽に作れるようにしたい』を目標に開発しました。",
+                category: [
+                  'PHP', 'WEBアプリケーション' 
+                ],
+                links: [
                   {
                     url: 'https://github.com/YU9-30/bumeshi_web',
                     display_name: 'Github',
                   },
                   {
-                    url: 'https://bumeshi-eat.herokuapp.com/',
-                    display_name: 'Bumeshi!!'
+                    url: 'https://creator-support-tool.yu-9.work/',
+                    display_name: 'クリエイターサポートツール'
                   },
                   {
-                    url: 'https://zenn.dev/yu_9/articles/yu9-bumeshi-2021',
-                    display_name: 'Zennの記事'
+                    url: 'https://zenn.dev/yu_9/articles/5fa3a6c9332afd',
+                    display_name: '詳細(Zenn)'
                   }
                 ],
             },
             {
                 title: 'BECCHU',
-                date: '2020/1/22',
+                md: 'bumeshi.md',
+                date: '2020/11/1',
                 abstract: "『クリエイターさんのデザイン守りつつ、オンリーワンを作る』を目標に開発しました。",
-                Links: [
+                category: [
+                  'PHP', 'Laravel', 'WEBアプリケーション' 
+                ],
+                links: [
                   {
                     url: 'https://github.com/YU9-30/bumeshi_web',
                     display_name: 'Github',
@@ -52,10 +60,34 @@ export default {
                   },
                   {
                     url: 'https://zenn.dev/yu_9/articles/yu9-becchu-2021',
-                    display_name: 'Zennの記事'
+                    display_name: '詳細(Zenn)'
                   }
                 ],
             },
+            {
+                title: 'Bumeshi!!',
+                md: 'bumeshi.md',
+                date: '2021/1/10',
+                abstract: "『ネガティブなレビューがない飲食店レビューサイト』を目標に開発中です。",
+                category: [
+                  'Ruby', 'Ruby on Rails', 'WEBアプリケーション' 
+                ],
+                links: [
+                  {
+                    url: 'https://github.com/YU9-30/bumeshi_web',
+                    display_name: 'Github',
+                  },
+                  {
+                    url: 'https://bumeshi-eat.herokuapp.com/',
+                    display_name: 'Bumeshi!!'
+                  },
+                  {
+                    url: 'https://zenn.dev/yu_9/articles/yu9-bumeshi-2021',
+                    display_name: '詳細(Zenn)'
+                  }
+                ],
+            },
+            
           
         ]
         }
