@@ -1,10 +1,10 @@
 <template>
 <div class="grid gap-4 grid-cols-1 md:grid-cols-3">
-    <div v-for="work in works" :key='work.date' class="pt-3 flex flex-warp">
+    <div v-for="work in works" :key='work.date' class="flex flex-warp">
         <div class="overflow-hidden rounded shadow-lg h-50 bg-gray-100 cursor-pointer" v-on:click="toggleModal(work)">
            <img class="object-contain" v-bind:src="require('@/assets/' + work.image.display)" v-on:mouseover="mouseover(work)" v-on:mouseleave="mouseleave(work)"/>
             <div class="p-4">
-                <h2 class="text-xl title-font font-bold mb-3 text-normal-color">{{work.title}}</h2>
+                <h3>{{work.title}}</h3>
                 <p class="my-2 text-base mx-1">{{work.abstract}}</p>
                 <p class="tag" v-for="category in work.categories"  :key="category.index">{{category}}</p> 
             </div>                 
@@ -17,7 +17,6 @@
 
 <script>
 import Modal from "./Modal.vue";
-
 
 export default {
     props: ['works'],
@@ -41,10 +40,14 @@ export default {
             
         },
         mouseover: function(work){
-            work.image.display= work.image.gif;
+            if(work.image.hover){
+                work.image.display= work.image.hover;
+            }
         },
         mouseleave: function(work){
-            work.image.display = work.image.jpg;
+            if(work.image.leave){
+                work.image.display= work.image.leave;
+            }
         }
     }
 }

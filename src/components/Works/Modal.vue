@@ -16,7 +16,7 @@
                         <p class=" text-normal-color text-lg">
                         {{work.abstract}}
                         </p>
-                        <img class="object-contain my-4" v-bind:src="require('@/assets/' + work.image.gif)"/>
+                        <img class="object-contain my-4" v-bind:src="require('@/assets/' + work.image.hover)"/>
                         <h3 class="font-bold text-normal-color">Link</h3>
                         <ul>
                             <li  v-for="link in work.links" :key='link.url' >
@@ -37,11 +37,7 @@
     
         <div class="overflow-x-hidden overflow-y-auto pattern-dots-sm text-blue-700 fixed inset-0 outline-none focus:outline-none justify-left items-left ">
             <div class="opacity-25 fixed inset-0 bg-black"></div>
-            <div class="opacity-60 text-9xl m-0 p-0 text-blue-700 z-1 font-black">
-                <p>WORKS/</p>
-                <p>{{work.title}}</p>
-                
-            </div>
+            <p class="opacity-60 text-9xl m-0 p-0 text-blue-700 font-black">WORKS/<br>{{work.title}}</p>   
         </div>
         
 </template>

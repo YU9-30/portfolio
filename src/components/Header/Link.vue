@@ -16,22 +16,18 @@ export default {
         links : [
             {
                 url: 'https://twitter.com/yukyu30',
-                icon_name: require("@/assets/icons/twitter.png"),
                 display_name: 'Twitter',
             },
             {
                 url: 'https://github.com/YU9-30',
-                icon_name: require("@/assets/icons/github.png"),
                 display_name: 'Github',
             },
             {
                 url: 'https://zenn.dev/yu_9',
-                icon_name: require("@/assets/icons/github.png"),
                 display_name: 'Zenn',
             },
             {
                 url: 'https://note.com/yukyu',
-                icon_name: require("@/assets/icons/github.png"),
                 display_name: 'note',
             },
         ]
