@@ -1,11 +1,11 @@
 <template>
   <div class="w-full text-left p-3 mt-5">
     <h1>Works</h1>
-    <h2 class="pl-2 mt-2">アプリケーション</h2>
+    <h2 class="pl-2 mt-7">アプリケーション</h2>
     <section class="mb-4">
       <Card :works="apps"></Card>
     </section>
-    <h2 class="pl-2 mt-2">制作物</h2>
+    <h2 class="pl-2 mt-10">制作物</h2>
       <Card :works="creations"></Card>
   </div>
 </template>
@@ -108,6 +108,48 @@ export default {
       ],
       creations: [
         {
+          title: "3Dモデル",
+          date: "2021/1/10",
+          image: {
+            display: "work/avater.jpg",
+            leave: "work/avater.jpg",
+            hover: "work/avater-posed.png",
+          },
+          abstract: "humanoid型のフルスクラッチ3Dモデル",
+          categories: [
+            "Blender",
+            "モデリング",
+            "VR",
+          ],
+          links: [
+            {
+              url: "https://www.fanbox.cc/@yu-9/posts/1817823",
+              display_name: "詳細(Pixiv Fanbox)",
+            },
+          ],
+        },
+        {
+          title: "FORGER",
+          date: "2021/1/10",
+          image: {
+            display: "work/forger-box.jpg",
+            leave: "work/forger-box.jpg",
+            hover: "work/forger-unbox.jpg",
+          },
+          abstract: "humanoid型のフルスクラッチ3Dモデル",
+          categories: [
+            "Blender",
+            "モデリング",
+            "VR",
+          ],
+          links: [
+            {
+              url: "https://www.fanbox.cc/@yu-9/posts/1817823",
+              display_name: "詳細(Pixiv Fanbox)",
+            },
+          ],
+        },
+        {
           title: "yu9logos",
           date: "2019/01/26",
           image: {
@@ -145,27 +187,7 @@ export default {
             },
           ],
         },
-        {
-          title: "3Dモデル",
-          date: "2021/1/10",
-          image: {
-            display: "work/avater.jpg",
-            leave: "work/avater.jpg",
-            hover: "work/avater-posed.png",
-          },
-          abstract: "humanoid型のフルスクラッチ3Dモデル",
-          categories: [
-            "Blender",
-            "モデリング",
-            "VR",
-          ],
-          links: [
-            {
-              url: "https://www.fanbox.cc/@yu-9/posts/1817823",
-              display_name: "詳細(Pixiv Fanbox)",
-            },
-          ],
-        },
+        
       ],
     };
   },
