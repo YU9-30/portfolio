@@ -22,8 +22,8 @@ export default {
           date: "2019/1/22",
           image: {
             display: "work/CST.jpg",
-            leave: "work/CST.jpg",
-            hover: "work/CST.gif",
+            jpg: "work/CST.jpg",
+            gif: "work/CST.gif",
           },
           abstract: "SUZURIのPR画像を生成できるWEBアプリケーション",
           categories: ["PHP", "WEBアプリケーション", "SUZURI API"],
@@ -47,9 +47,9 @@ export default {
           date: "2020/11/1",
           abstract: "デザインと色を選ぶことでTシャツなどを作成できるWEBアプリケーション",
           image: {
-            display: "icon.jpg",
-            leave: "icon.jpg",
-            hover: "work/CST.gif",
+            display: "work/becchu.jpg",
+            jpg: "work/becchu.jpg",
+            gif: "work/becchu.gif",
           },
           categories: ["PHP", "Laravel", "WEBアプリケーション", "SUZURI API"],
           links: [
@@ -71,9 +71,9 @@ export default {
           title: "Bumeshi!!",
           date: "2021/1/10",
           image: {
-            display: "work/CST.gif",
-            leave: "icon.jpg",
-            hover: "work/CST.gif",
+            display: "work/bumeshi.jpg",
+            jpg: "work/bumeshi.jpg",
+            gif: "work/bumeshi.gif",
           },
           abstract: "美味しい飲食店を共有するWEBアプリケーション",
           categories: [
@@ -85,7 +85,7 @@ export default {
           links: [
             {
               url: "https://bumeshi-eat.herokuapp.com/",
-              display_name: "Bumeshi!!",
+              display_name: "Bumeshi!!(起動に時間がかかります)",
             },
             {
               url: "https://zenn.dev/yu_9/articles/yu9-bumeshi-2021",

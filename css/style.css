@@ -13,3 +13,9 @@
 .bg-gradient-blue{
    @apply bg-gradient-to-r from-green-400 to-blue-500 
 }
+.stroke{
+    stroke-width:0.3px;
+}
+.h-screen-80{
+    height: 80vh;
+}

@@ -1,6 +1,6 @@
 <template>
-<div class="grid gap-4 grid-cols-1 md:grid-cols-2">
-    <div v-for="work in works" :key='work.date' class="pt-3">
+<div class="grid gap-4 grid-cols-1 md:grid-cols-3">
+    <div v-for="work in works" :key='work.date' class="pt-3 flex flex-warp">
         <div class="overflow-hidden rounded shadow-lg h-50 bg-gray-100 cursor-pointer" v-on:click="toggleModal(work)">
            <img class="object-contain" v-bind:src="require('@/assets/' + work.image.display)" v-on:mouseover="mouseover(work)" v-on:mouseleave="mouseleave(work)"/>
             <div class="p-4">
@@ -41,10 +41,10 @@ export default {
             
         },
         mouseover: function(work){
-            work.image.display= work.image.hover;
+            work.image.display= work.image.gif;
         },
         mouseleave: function(work){
-            work.image.display = work.image.leave;
+            work.image.display = work.image.jpg;
         }
     }
 }
