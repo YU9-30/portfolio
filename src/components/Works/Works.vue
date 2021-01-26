@@ -40,7 +40,7 @@ export default {
               display_name: "詳細(Zenn)",
             },
             {
-              url: "https://github.com/YU9-30/bumeshi_web",
+              url: "https://github.com/YU9-30/suzuri_support_tool",
               display_name: "ソースコード(Github)",
             },
           ],
@@ -65,7 +65,7 @@ export default {
               display_name: "詳細(Zenn)",
             },
             {
-              url: "https://github.com/YU9-30/bumeshi_web",
+              url: "https://github.com/YU9-30/semiorder_suzuri",
               display_name: "ソースコード(Github)",
             },
           ],
@@ -136,16 +136,16 @@ export default {
             leave: "work/forger-box.jpg",
             hover: "work/forger-unbox.jpg",
           },
-          abstract: "humanoid型のフルスクラッチ3Dモデル",
+          abstract: "3Dプリンターで作成したボールペン",
           categories: [
-            "Blender",
-            "モデリング",
-            "VR",
+            "3Dプリンター",
+            "Fusion360",
+            "文具",
           ],
           links: [
             {
-              url: "https://www.fanbox.cc/@yu-9/posts/1817823",
-              display_name: "詳細(Pixiv Fanbox)",
+              url: "https://note.com/yukyu/n/n90b7e7aa3d89",
+              display_name: "開発日記(note)",
             },
           ],
         },
