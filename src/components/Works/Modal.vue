@@ -12,8 +12,9 @@
                 </div>
                 <!--body-->
                 <div class="overflow-y-auto p-6">
-                    <p class=" text-normal-color text-lg">{{work.abstract}}</p>
-                    <img class="object-contain my-4" v-bind:src="require('@/assets/' + work.images.hover)"/>
+                    <p class="text-normal-color text-lg">{{work.abstract}}</p>
+                    <content-loader v-if="isLoading"></content-loader>
+                    <img v-show="!isLoading" class="object-contain my-4" v-bind:src="require('@/assets/' + work.images.hover)" v-on:load="loaded"/>
                     <h3 class="font-bold text-normal-color">Link</h3>
                     <ul>
                         <li  v-for="link in work.links" :key='link.url' >
@@ -37,17 +38,27 @@
 </template>
 
 <script>
+import { ContentLoader } from 'vue-content-loader'
+
 export default {
     props: ['work'],
     name: "work-modal",
+    components: {
+        ContentLoader
+    },
     data() {
         return {
             showModal: false,
+            isLoading: true
         }
     },
     methods: {
         closeModal:function(){
             this.$emit('close');
+        },
+        loaded: function(){
+            console.log('loaded');
+            this.isLoading = false
         }
     },
 }
