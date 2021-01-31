@@ -24,10 +24,11 @@ export default {
   },
   async mounted() {
     // Worksを取得
+    //秘密にする必要がないため公開してます。
     const response = await axios.get(
       "https://yukyu-myportfolio.microcms.io/api/v1/works",
       {
-        headers: { "X-API-KEY": process.env.X_API_KEY }
+        headers: { "X-API-KEY": process.env.VUE_APP_X_API_KEY}
       }
     );
     this.works = response.data;
