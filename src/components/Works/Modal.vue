@@ -13,9 +13,12 @@
                 <!--body-->
                 <div class="overflow-y-auto p-6">
                     <p class="text-normal-color text-lg">{{work.abstract}}</p>
-                    <content-loader v-if="isLoading"></content-loader>
-                    <img v-show="!isLoading" class="object-contain my-4" v-bind:src="require('@/assets/' + work.images.hover)" v-on:load="loaded"/>
+                    <div class="w-full">
+                        <content-loader class="object-contain my-4" v-show="isLoading"></content-loader>
+                        <img v-show="!isLoading" class="object-contain my-4" v-bind:src="require('@/assets/' + work.images.hover)" v-on:load="loaded"/>
+                    </div>
                     <h3 class="font-bold text-normal-color">Link</h3>
+                    
                     <ul>
                         <li  v-for="link in work.links" :key='link.url' >
                             <a class="hover:text-blue-300" :href= link.url>{{ link.displayName }}</a>
@@ -63,3 +66,9 @@ export default {
     },
 }
 </script>
+
+<style>
+content-loader {
+    max-width: 100%;
+}
+</style>
