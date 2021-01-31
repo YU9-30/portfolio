@@ -27,7 +27,7 @@ export default {
   },
   data() {
     return {
-      name: "悠久",
+      name: "yu-9(悠久)",
       name_kana: "ゆうきゅう",
       birthday: "199X/9/30"
       
