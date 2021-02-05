@@ -32,11 +32,11 @@ export default {
       };
 
       s.draw = () => {
-        s.background(250);
+        s.background(255);
         s.rectcross(w-w/6,200+(5*s.sin(s.frameCount/50)),2,100,100);
         
         s.rectcross(w-w/5.75,320+(5*s.sin(s.frameCount/50)),2,30,30);
-         s.rectcross(w-w/8,350+(5*s.sin(s.frameCount/50)),2,40,40);
+        s.rectcross(w-w/8,350+(5*s.sin(s.frameCount/50)),2,40,40);
         s.rectcross(w/8,500+(5*s.sin(s.frameCount/50)),2,100,100);
         s.rectdots(w/8-100,500,3,15,5);
         s.rectcross(w/8-50,450+(5*s.sin(s.frameCount/50)),2,50,50);
@@ -45,11 +45,6 @@ export default {
         s.rectdots(53,390,3,5,2);
         
         s.rectdots(w-w/3,0,3,4*s.sin((s.frameCount/360)+ 180 +s.cos(s.frameCount/50)*(2*(s.cos(s.frameCount/500))))+40,3);
-     
-        s.textStyle(s.BOLD);
-       
-        s.fill('#2563EB');
-        s.text("yu-9.work",w-100,h-310);
       };
       s.rectcross = (x,y,size,w,h) =>{
         s.push()

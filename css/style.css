@@ -36,7 +36,7 @@ h2 {
 }
 
 h3{
-    @apply text-xl font-bold mb-3 text-normal-color
+    @apply text-xl font-bold text-normal-color
 }
 
 p{
