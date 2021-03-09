@@ -2,7 +2,7 @@
 <div class="grid gap-4 grid-cols-1 md:grid-cols-3">
     <div v-for="work in works" :key='work.id' class="flex flex-warp">
         <div class="overflow-hidden rounded shadow-lg h-50 bg-gray-100 cursor-pointer" v-on:click="toggleModal(work.id)">
-           <img class="object-contain" v-bind:src="require('@/assets/' + work.images.default)"/>
+           <img class="object-contain" :src="work.default_image.url" />
             <div class="p-4">
                 <h3>{{work.title}}</h3>
                 <p class="text-xs text-gray-400">{{work.date.slice(0,10)}}</p>

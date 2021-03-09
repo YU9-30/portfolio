@@ -15,7 +15,7 @@
                     <p class="text-normal-color text-lg">{{work.abstract}}</p>
                     <div class="w-full">
                         <content-loader class="object-contain my-4" v-show="isLoading"></content-loader>
-                        <img v-show="!isLoading" class="object-contain my-4" v-bind:src="require('@/assets/' + work.images.hover)" v-on:load="loaded"/>
+                        <img v-show="!isLoading" class="object-contain my-4" :src="work.hover_image.url" v-on:load="loaded"/>
                     </div>
                     <h3 class="font-bold text-normal-color">Link</h3>
                     
