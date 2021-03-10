@@ -19,7 +19,7 @@ export default {
                 display_name: 'Twitter',
             },
             {
-                url: 'https://github.com/YU9-30',
+                url: 'https://github.com/yukyu30',
                 display_name: 'Github',
             },
             {
@@ -27,8 +27,12 @@ export default {
                 display_name: 'Zenn',
             },
             {
-                url: 'https://note.com/yukyu',
+                url: 'https://note.com/yukyu30',
                 display_name: 'note',
+            },
+            {
+                url: 'https://blog.yukyu.net',
+                display_name: 'blog',
             },
         ]
     };
